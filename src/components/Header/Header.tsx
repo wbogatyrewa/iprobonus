@@ -12,7 +12,7 @@ function Header({
   logo = "Логотип",
   infoIcon = InfoIcon(),
   infoOnClick = () => {},
-}: Props) {
+}: Props): JSX.Element {
   return (
     <HeaderPresentation>
       <Logo>{logo}</Logo>
