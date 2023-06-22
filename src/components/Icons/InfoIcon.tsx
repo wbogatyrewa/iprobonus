@@ -1,4 +1,4 @@
-function InfoIcon() {
+function InfoIcon(): JSX.Element {
   return (
     <svg
       width="24"

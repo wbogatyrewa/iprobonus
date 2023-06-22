@@ -1,4 +1,4 @@
-function NextIcon() {
+function NextIcon(): JSX.Element {
   return (
     <svg
       width="35"
