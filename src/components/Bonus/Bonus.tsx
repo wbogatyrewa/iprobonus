@@ -17,8 +17,6 @@ export interface Props {
   forBurningQuantity: number;
 }
 
-// при ховере и клике иконку некст делать инверсной
-
 function Bonus({
   currentQuantity,
   dateBurning,
