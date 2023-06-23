@@ -7,7 +7,7 @@ function InfoIcon(): JSX.Element {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="information-button 1" clip-path="url(#clip0_1_40)">
+      <g id="information-button 1" clipPath="url(#clip0_1_40)">
         <g id="Group">
           <path
             id="Vector"
@@ -25,8 +25,8 @@ function InfoIcon(): JSX.Element {
           y2="24"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D2333E" />
-          <stop offset="1" stop-color="#F54B55" />
+          <stop stopColor="#D2333E" />
+          <stop offset="1" stopColor="#F54B55" />
         </linearGradient>
         <clipPath id="clip0_1_40">
           <rect width="24" height="24" fill="white" />
