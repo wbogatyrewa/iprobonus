@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import accessTokenReducer from "../features/accessTokenSlice";
+import userBonusReducer from "../features/userBonusSlice";
 
 export const store = configureStore({
   reducer: {
     accessToken: accessTokenReducer,
+    userBonus: userBonusReducer,
   },
 });
 
