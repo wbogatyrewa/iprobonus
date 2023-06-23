@@ -9,3 +9,7 @@ export const BonusContainer = styled.div`
   background-size: 100% 148px;
   background-repeat: no-repeat;
 `;
+
+export const LoaderContainer = styled.div`
+  text-align: center;
+`;
