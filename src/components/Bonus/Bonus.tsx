@@ -9,6 +9,7 @@ import {
 } from "./Bonus.style";
 import NextIcon from "../Icons/NextIcon";
 import FireIcon from "../Icons/FireIcon";
+import { wordDeclension } from "../../scripts/wordDeclension";
 
 export interface Props {
   currentQuantity: number;
@@ -16,7 +17,6 @@ export interface Props {
   forBurningQuantity: number;
 }
 
-// делать проверку на окончание слов
 // при ховере и клике иконку некст делать инверсной
 
 function Bonus({
@@ -27,13 +27,21 @@ function Bonus({
   return (
     <BonusPresentation>
       <BonusGroup>
-        <Total>{`${currentQuantity} бонусов`}</Total>
+        <Total>{`${currentQuantity} ${wordDeclension(currentQuantity, [
+          "бонус",
+          "бонуса",
+          "бонусов",
+        ])}`}</Total>
         <BurnGroup>
           {`${dateBurning} сгорит `}
           <Fire>
             <FireIcon />
           </Fire>
-          {` ${forBurningQuantity} бонусов`}
+          {` ${forBurningQuantity} ${wordDeclension(forBurningQuantity, [
+            "бонус",
+            "бонуса",
+            "бонусов",
+          ])}`}
         </BurnGroup>
       </BonusGroup>
       <NextButton>
