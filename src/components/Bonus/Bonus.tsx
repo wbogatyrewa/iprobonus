@@ -11,25 +11,29 @@ import NextIcon from "../Icons/NextIcon";
 import FireIcon from "../Icons/FireIcon";
 
 export interface Props {
-  total: number;
-  burnDate: string;
-  burnAmount: number;
+  currentQuantity: number;
+  dateBurning: string;
+  forBurningQuantity: number;
 }
 
 // делать проверку на окончание слов
 // при ховере и клике иконку некст делать инверсной
 
-function Bonus({ total, burnDate, burnAmount }: Props): JSX.Element {
+function Bonus({
+  currentQuantity,
+  dateBurning,
+  forBurningQuantity,
+}: Props): JSX.Element {
   return (
     <BonusPresentation>
       <BonusGroup>
-        <Total>{`${total} бонусов`}</Total>
+        <Total>{`${currentQuantity} бонусов`}</Total>
         <BurnGroup>
-          {`${burnDate} сгорит `}
+          {`${dateBurning} сгорит `}
           <Fire>
             <FireIcon />
           </Fire>
-          {` ${burnAmount} бонусов`}
+          {` ${forBurningQuantity} бонусов`}
         </BurnGroup>
       </BonusGroup>
       <NextButton>
